@@ -3,9 +3,9 @@
 cask "spacemosquito" do
   arch arm: "arm64", intel: "amd64"
 
-  version "0.6.0"
-  sha256 arm:   "1b4e16075e5e0602543b86034dde50335d1e3054e22f8de81897f8e4ffb1b35a",
-         intel: "04cbcfc1b056875d05f9672d443b50e8476fe7aee09842d964b04ded54f95064"
+  version "0.7.0"
+  sha256 arm:   "d72de78fb8f0950c3d9ecd8bd5a79bf194d97ab48e6a9d03e77efd813000f576",
+         intel: "f32ad2ee04e96cee44bccdfd9ce5d9d37303c2dad9f2722323a805e8f69c697c"
 
   url "https://github.com/infomosquitos/spacemosquito/releases/download/v#{version}/spacemosquito-darwin-#{arch}"
   name "SpaceMosquito"
@@ -58,6 +58,8 @@ cask "spacemosquito" do
 
     5. Crawl a space from the popup's Spaces tab, or from the terminal:
          spacemosquito crawl "https://your-domain.atlassian.net/wiki/spaces/SPACEKEY"
+       Then click 📖 next to the space to browse the saved pages
+       (or open ~/.spacemosquito/saved/index.html).
 
     6. Optional: connect AI agents via MCP at http://127.0.0.1:56403/mcp
        https://github.com/infomosquitos/spacemosquito/blob/main/docs/guides/configure-mcp.md
