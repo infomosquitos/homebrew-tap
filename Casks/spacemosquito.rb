@@ -3,9 +3,9 @@
 cask "spacemosquito" do
   arch arm: "arm64", intel: "amd64"
 
-  version "0.8.1"
-  sha256 arm:   "7f13784a5c89fdf9cf7b50000b52d5abd215b8148bb0a425198bd016a2921a67",
-         intel: "77e9d608db06a04758b85a821535a625942a8a524b9b2cb48fff4df5ad040222"
+  version "0.8.2"
+  sha256 arm:   "47d93515796b5f78a7953ebca120ebd77b3c60a74091e7fb0005653af3f3149f",
+         intel: "883fc3c007cc33b13221b99a671f37fe6ad3fe4f92ec07a8db6ba5b4f3ab217f"
 
   url "https://github.com/infomosquitos/spacemosquito/releases/download/v#{version}/spacemosquito-darwin-#{arch}"
   name "SpaceMosquito"
