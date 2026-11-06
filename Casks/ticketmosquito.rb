@@ -3,9 +3,9 @@
 cask "ticketmosquito" do
   arch arm: "arm64", intel: "amd64"
 
-  version "0.2.0"
-  sha256 arm:   "0c574f951abd70eb305aa6dbd0cb91a7e7e2a0e0015cd465f4abec946c99691e",
-         intel: "47a80b1f0736c7b7f9e45c7f47cd82dff3e1468fb7924cbe5b3ab3c407523f09"
+  version "0.2.1"
+  sha256 arm:   "89aaa1943aa0a62511f31432ae21cd53f4e32e368d94a9fff10998e8fe5ad60a",
+         intel: "b5315a953c4f385f44a34eb13d149457d1674a9b2199ae211aaba5884dfa4b6e"
 
   url "https://github.com/infomosquitos/ticketmosquito/releases/download/v#{version}/ticketmosquito-darwin-#{arch}"
   name "TicketMosquito"
@@ -43,15 +43,13 @@ cask "ticketmosquito" do
 
     3. Install the browser extension (Homebrew cannot do this for you).
        Download it from https://github.com/infomosquitos/ticketmosquito/releases/tag/v#{version}
+         Firefox: ticketmosquito-firefox-v#{version}.xpi
+                  about:addons -> gear icon -> Install Add-on From File...
          Chrome:  ticketmosquito-chrome-v#{version}.zip, unzip it into a folder you keep:
                     mkdir -p ~/Applications/TicketMosquito-Chrome
                     unzip -o ~/Downloads/ticketmosquito-chrome-v#{version}.zip -d ~/Applications/TicketMosquito-Chrome
                   chrome://extensions -> Developer mode -> Load unpacked ->
                   select that folder (not the .zip)
-         Firefox: ticketmosquito-firefox-v#{version}.zip (unsigned until AMO signing ships).
-                  Unzip, then about:debugging#/runtime/this-firefox ->
-                  Load Temporary Add-on… -> select that folder's manifest.json
-                  (temporary; reloads after browser restart).
        Details: https://github.com/infomosquitos/ticketmosquito/blob/main/docs/guides/extension-install.md
 
     4. Log in to Jira, open the Ticket Mosquito extension popup and click
